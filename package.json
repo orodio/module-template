@@ -20,7 +20,7 @@
     "jest": "^20.0.3"
   },
   "scripts": {
-    "clean": "rm -rf ./lib && mkidr ./lib",
+    "clean": "rm -rf ./lib && mkdir ./lib",
     "build": "yarn clean && babel src/index.js -o lib/index.js",
     "build:watch": "yarn build -- --w",
     "test": "jest",
